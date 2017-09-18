@@ -1,0 +1,18 @@
+
+apkpatch -f <new> -t <old> -o <output> -k <keystore> -p <***> -a <alias> -e <***>
+
+ -a,--alias <alias>     keystore entry alias.
+ -e,--epassword <***>   keystore entry password.
+ -f,--from <loc>        new Apk file path.
+ -k,--keystore <loc>    keystore path.
+ -n,--name <name>       patch name.
+ -o,--out <dir>         output dir.
+ -p,--kpassword <***>   keystore password.
+ -t,--to <loc>          old Apk file path.
+
+
+apkpatch 
+-f S:\key_store\apkpatch-1.0.3\new.apk 
+-t S:\key_store\apkpatch-1.0.3\old.apk 
+-o S:\key_store\apkpatch-1.0.3\diff\ 
+-k S:\key_store\key.jks -p 123456 -a sunxiaoyu -e 123456
